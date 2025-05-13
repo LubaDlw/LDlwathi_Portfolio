@@ -1,0 +1,186 @@
+/* portfolio.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2&family=Roboto+Mono&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #ECEFF1;
+  color: #37474F;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+main h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main > p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.category-nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 3rem 0;
+  padding: 1rem 0;
+}
+
+.category-nav a button {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  background-color: #536DFE;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-nav a button:hover {
+  background-color: #00E5FF;
+  color: #37474F;
+  transform: translateY(-2px);
+}
+
+section {
+  margin-top: 3rem;
+}
+
+section h2 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+section div,
+section article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+article {
+  background-color: #ECEFF1;
+  border: none;
+  border-radius: 2px;
+  width: 350px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+article img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin: 1rem 0;
+  background-color: #CFD8DC;
+  border-radius: 12px;
+}
+
+article ul {
+  text-align: left;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+article button {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #536DFE;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+article button:hover {
+  background-color: #00E5FF;
+  color: #37474F;
+}
+
+.filter-btn {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #37474F;
+  border: 2px solid #536DFE;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #536DFE;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-item {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-item.hidden {
+  display: none;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Animation for showing items */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project-item {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Always show description on mobile */
+@media screen and (max-width: 768px) {
+  .project-item .description-port {
+    display: block;
+    opacity: 1;
+  }
+
+  .project-item:hover .description-port {
+    display: block;
+  }
+}
+
+/* Hide description by default on desktop */
+.project-item .description-port {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show description on hover (desktop) */
+.project-item:hover .description-port {
+  display: block;
+  opacity: 1;
+}
