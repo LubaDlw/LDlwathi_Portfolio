@@ -338,3 +338,43 @@ footer .copyright {
   50% { opacity: 0; }
 }
 
+#intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ECEFF1; /* Match your dark background */
+  color: #00e5ff; /* Neon cyan accent from your theme */
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+.intro-text {
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+  opacity: 0;
+  animation: fadeInText 2s ease forwards;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+
+body.loaded #intro-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+
