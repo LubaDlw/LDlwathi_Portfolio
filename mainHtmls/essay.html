@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="../css_styles/styles.css" />
   <link rel="stylesheet" href="../css_styles/essay.css" />
   <link rel="stylesheet" href="../css_styles/responsive.css">
+   <script src="../js_scripts/footer.js" defer></script>
+   <script src="../js_scripts/essay.js" defer></script>
 </head>
 <body>
   <header>
@@ -19,17 +21,17 @@
 
     <!-- Burger icon label 4 responsive-->
     <label for="nav-toggle" class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span><!-- Spans are intentionally Empty, I use css to display burger icons on mobile --></span>
+        <span><!-- Spans are intentionally Empty, I use css to display burger icons on mobile --></span>
+        <span><!-- Spans are intentionally Empty, I use css to display burger icons on mobile --></span>
     </label>
       <nav>
         <ul class="nav-list">
           <li><a href="../index.html">HOME</a></li>
           <li><a href="../mainHtmls/portfolio.html">PORTFOLIO</a></li>
-          <!-- <li><a href="../mainHtmls/design.html">DESIGN</a></li>
+          <li><a href="../mainHtmls/design.html">DESIGN</a></li>
           <li><a href="../mainHtmls/blog.html">BLOGS</a></li>
-          <li><a href="../mainHtmls/essay.html" class="active">ESSAY</a></li> -->
+          <li><a href="../mainHtmls/essay.html" class="active">ESSAY</a></li>
           <li><a href="../mainHtmls/profile.html" class="profile-button">PROFILE</a></li>
         </ul>
       </nav>
@@ -38,29 +40,339 @@
 
   <main class="essay-wrapper h-feed">
     <section class="essay-hero">
-      <h1 class="section-title">ESSAY SECTION</h1>
-      <p class="subtitle p-summary">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.</p>
+      <h1 class="section-title">ACADEMIC ESSAYS</h1>
+      <p class="subtitle p-summary">Critical analysis and academic discourse on digital design, user experience, and interaction design ethics.</p>
 
       <div class="essay-tabs">
-        <button class="tab active">ESSAY 1</button>
-        <button class="tab">ESSAY 2</button>
+        <button class="tab active" data-essay="essay1">Essay 1</button>
+        <button class="tab" data-essay="essay2">ESSAY 2</button>
+        <button class="tab" data-essay="essay3">Reflection</button>
       </div>
     </section>
 
-    <article class="essay-content h-entry">
-      <h2 class="essay-title p-name">ESSAY TITLE</h2>
-      <div class="essay-body e-content">
-        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu...</p>
-        <p>Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut...</p>
-        <p>Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis...</p>
-        <p>Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos...</p>
+    <article class="essay-content h-entry" id="essay1">
+      <div class="essay-header">
+        <h2 class="essay-title p-name">The Evolution of Showmax: A Critical Analysis of Ethical Interaction Design in African Digital Streaming</h2>
+        <div class="essay-meta">
+          <span class="course-code">DIGA3008A - Essay 1</span>
+          <span class="student-id">Student ID: 2546125</span>
+          <span class="word-count">Word Count: ~2500</span>
+        </div>
       </div>
+      
+      <div class="essay-body e-content">
+        <section class="essay-section">
+          <p class="essay-intro">In 2024, Showmax, a South African video-on-demand streaming platform, partnered with Grid Worldwide, a branding design and advertising company, to execute a comprehensive rebrand and user experience makeover of the Showmax platform. This transformation represents a significant shift in how the streaming platform positions itself within the African digital landscape. This essay critically analyzes the evolution from the old Showmax design to the new, evaluates core UI and UX enhancements, and deliberates on the ethics of Showmax's interaction design approach.</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">The Evolution of Showmax's Visual Identity</h3>
+          <p>Showmax's original visual identity centered around a fixed, white logo against a dark background, a minimalist approach that, while clean, offered limited brand expression and functional utility. The 2024 rebrand transformed this static element into what Grid Worldwide (2024) describes as a dynamic "avatar system" that animates and adapts to content. This reimagining elevates the showmax "X" icon from mere logo to interactive portal: opening up a plethora of UI/UX which which enhance how users now interact with the new Showmax.</p>
+          
+          <p>In their 2024 article, <em>Goodbye Showmax 1.0</em>, Labuschagne (2024) highlights how the previous Showmax interface prioritized simplicity but lacked distinctive personality. This is a rather interesting aspect to note as it sparks inquisition into how, in the new Showmax, user experience and user interface collide and contribute to interaction design. This becomes rather prevalent and can be observed in how users react to the changes presented in the 2024 redesign of Showmax. Many users reported accessibility issues with apprehension becoming a common theme (Labuschagne, 2024).</p>
+          
+          <p>However in their 2025 follow up analysis of the new Showmax, Muchiri (2025) celebrates how the redesign transforms a formerly generic streaming experience into something distinctly African (Labuschagne, 2024). This transformation extends beyond cosmetic changes to reimagine how users interact with content. A key aspect of interaction design is facilitating a meaningful relationship between the user and the technology. This is something the redesign of Showmax does well. Evidence of this can be seen in how user attitudes towards the redesign have since changed to be more positive (Muchiri, 2025).</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">Color Palette Transition</h3>
+          <p>The previous Showmax interface relied on a largely monochromatic scheme that did little to differentiate the brand or reflect its African identity. While it was still functional, what ultimately renders the new design successful is how it creates meaning through interaction design. The redesign introduces an expansive palette, warm ochres, deep purples, and sunrise oranges; drawn from the African landscape. User surveys conducted across Nigeria, Kenya, and South Africa revealed that over 80 percent of respondents felt the new colors resonated more deeply with local African identity. (Illidge, 2024)</p>
+          
+          <p>Muchiri's (2025) analysis specifically praises this palette shift, noting that the vibrant color system doesn't just look appealing, it further conveys cultural meaning and creates emotional connections (Muchiri, 2025). This deliberate choice aligns with Smit's (2023) analysis of how Showmax leverages regionally resonant elements to build cultural credibility, representing a strategic pivot toward visual language that acknowledges and celebrates African contexts. This in turn contributes to Showmax as not only an African alternative to popular Global streaming platforms, but also a competitor.</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">UI/UX Enhancements</h3>
+          
+          <h4 class="subsection-heading">Content Organization</h4>
+          <p>Additionally the older version of Showmax was charectorised by a content organization system that relied heavily on standard categories with limited personalization options. Users navigated through relatively rigid content hierarchies that didn't always reflect local viewing patterns or preferences.</p>
+          
+          <p>However, Showmax now employs a modular grid of content "cards" that intelligently reflow across different screen dimensions (Amplitude, 2022). This is particularly pertinent as it addresses accessibility issues experienced in the previous Showmax and it is consequently a critical feature given that approximately 60 percent of African viewers access streaming via mobile devices. Barron Ernst, the chief product officer at Showmax, notes that this responsive approach has yielded "a 40% increase in mobile session duration and a 25% reduction in navigation-related support tickets," demonstrating tangible user experience improvements (Illidge, 2024).</p>
+          
+          <p>Adding onto that, Muchiri (2023) observed that the new interface's "spatial organization creates clearer content territories," separating different genres and themes of content effectively while still maintaining a unified browsing experience across devices. This approach addresses what Tataki and Glynos (2020) identified as a critical digital inclusion challenge: ensuring accessibility across diverse device ecosystems. It is again for this reason that the new Showmax makes great use UI and UX to contribute to a solid interaction design.</p>
+          
+          <h4 class="subsection-heading">Navigation</h4>
+          <p>The original Showmax navigation system relied heavily on text-based menus and standardized categorization that while functional, created "cognitive overload for users exploring unfamiliar content categories." However the redesign introduces avatar-driven navigation, where each content category and partner brand is represented by a custom X-shaped avatar, such as a football icon for Premier League content(Illidge, 2024). This allows Showmax to display content dynamically and innovatively maintaining their branding and a consistent UI while still creatively displaying key information back to the user.</p>
+          
+          <p>This new navigation system reduces cognitive load while simultaneously strengthening brand recognition (Illidge, 2024). This evolution resonates concept of "cultural signifiers in interface design," where visual elements reflect local cultural contexts while maintaining global interaction norms. Showmax's avatar system represents an elegant implementation of this principle, creating a visually intuitive navigation system that bridges linguistic and cultural divides (Kim, Jo and Ha, 2011).</p>
+          
+          <h4 class="subsection-heading">Micro-Interactions and System Feedback</h4>
+          <p>The old Showmax interface featured standard loading indicators and minimal transition effects, creating a somewhat static user experience. Because of this, the previous Showmax suffered from rather subpar feedback mechanisms that left users uncertain about system status, particularly in low-bandwidth situations (Labuschagne, 2024). The redesign incorporates subtle but meaningful micro-interactions: loading indicators that morph into the animated "X," hover states that gently scale tiles, and progress bars that adopt the brand's accent colors thus gamifying the user experience and ensuring the user is fully aware of key statuses and vital information, that they might not have had in the previous Showmax.</p>
+          
+          <p>These enhancements, transform key functional moments into brand touchpoints while providing crucial feedback loops in connectivity-challenged environments" (Labuschagne, 2024). These feedback mechanisms are strategically implemented at decision points, such as when a user adds a title to "My List" or initiates a download, confirming that the system has registered their action.</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">Data-Driven Personalization</h3>
+          <p>Another interesting point is that the previous Showmax iteration offered basic recommendation features that lacked regional specificity and sophisticated algorithmic personalization. As such the old system can be described as "functional but generic," with limited ability to surface locally relevant content. The redesign implements what Amplitude (2022) describes as a comprehensive analytics-driven approach, where real-time usage data inform both UI experiments and content suggestions. This demonstrates very well thought out and particular interaction design. This evelavtes Showmax from just a generic video-on-demand streaming platform to a well curated user experience and user interface.</p>
+          
+          <p>This can be seen in how the new recommendation engine demonstrates "algorithmic empathy, understanding not just what users watch, but how viewing patterns differ across regions (Labuschagne, 2024). The platform now surfaces "Because you watched..." rows alongside regionally contextualized suggestions like "Trending in Lagos" or "Popular in Nairobi." Post-launch metrics revealed a 30 percent increase in play rates for algorithmically recommended titles, validating the effectiveness of this personalized approach (Amplitude, 2022).</p>
+          
+          <p>This evolution aligns with Smit's (2023) analysis of how Showmax leverages regionally resonant storytelling to build cultural credibility. By ensuring that algorithmic recommendations include local productions alongside international content, Showmax avoids what Birhane (2020) terms "algorithmic colonization", the tendency of Western-designed AI systems to prioritize Western content and perspectives.</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">Adaptive Layout Experimentations</h3>
+          <p>Muchiri (2023) notes that the new Showmax employs "continuous experimentation rather than fixed design solutions," systematically testing interface elements to optimize for regional preferences. This then explains the initial apprehension towards Showmax 2.0. However, Illidge (2024) reveals that "the platform conducts over 50 A/B tests monthly across different regions, creating a constantly evolving experience based on actual user behavior rather than assumptions".</p>
+          
+          <p>This iterative, data-informed approach represents a significant advancement from the previous more static design methodology observed in the original Showmax. By continuously evaluating how users interact with different layout variations, Showmax can fine-tune the experience to match regional preferences and behaviors, this is a practice that is essential for platforms serving diverse markets and highlights the ethical dimensions of interaction design.</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">Digital Inclusion and Accessibility</h3>
+          <p>The previous Showmax contained significant accessibility gaps: limited offline capabilities, high bandwidth requirements, and insufficient accommodation for various literacy levels. These are consequently issued addressed in the new Showmax where accessibility is transformed from checkbox compliance to core design philosophy (Illidge, 2024).</p>
+          
+          <p>The platform now optimizes for low-bandwidth conditions by compressing image assets, offering adaptive bitrate streaming, and enabling more effective offline downloads, features that ensure entertainment isn't confined to urban elites with consistent connectivity. The interface also incorporates accessibility features absent in the previous iteration: diverse subtitle options, voice-over support, and clear, jargon free labels that cater to users with visual impairments or literacy challenges.</p>
+          
+          <p>These enhancements align with Costanza-Chock's (2020) Design Justice framework, which urges designers to center marginalized communities throughout the design process. By embedding these inclusive practices, Showmax moves beyond token accessibility to co-create value with its diverse audience.</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">Representation</h3>
+          <p>A rather important ethical ramnification in interaction design is cultural contextualization. The original Showmax recommendation system, like many streaming platforms, risked what Birhane (2020) terms "algorithmic colonization", the imposition of Western-centric algorithmic frameworks onto diverse cultural contexts.</p>
+          
+          <p>However, the redesigned platform counters this through decentralized algorithmic governance: Showmax now deploys Regional content teams now have dashboard access and authority to adjust recommendation weighting, ensuring that algorithms reflect local cultural values rather than imported preference models"(Muchiri, 2025). This approach represents a significant ethical advancement, acknowledging that algorithmic systems embody cultural values and must be designed with local sensibilities in mind (Ganchi, 2021).</p>
+          
+          <p>Lastly, the previous Showmax incorporated several problematic design patterns: difficult-to-cancel subscriptions, pre-selected upsells, and autoplay features that couldn't be easily disabled. These ultimately tarnsihed the user experience however "redesigned interface avoids these common dark patterns, implementing "transparent pricing models, single-click cancellation, and clearly labeled data usage controls" which emphasize ethical design practices that prioritise users (Amplitude, 2022).</p>
+          
+          <p>As Mok (2023) emphasizes, these design choices reflect a delicate balance between business imperatives, maximizing engagement, reducing churn, and ethical UX goals like user wellbeing and autonomy. By prioritizing transparency and user control, Showmax demonstrates that ethical design can coexist with commercial objectives.</p>
+        </section>
+
+        <section class="essay-section">
+          <h3 class="section-heading">Conclusion</h3>
+          <p>Thus Finally, the transformation of Showmax's digital platform represents a significant case study in the evolution of regionally-sensitive interaction design. The redesign journey, from a generic, functional interface to a dynamically responsive, culturally-embedded experience, illustrates how ethical considerations can be seamlessly integrated into commercial platforms while enhancing rather than compromising user engagement.</p>
+          
+          <p>At its core, the Showmax redesign demonstrates how ethical interaction design extends beyond mere technical improvements. By replacing the static monochromatic scheme with a vibrant, African-inspired palette and transforming rigid content hierarchies into responsive, device-agnostic layouts, Showmax addressed fundamental accessibility challenges prevalent in diverse technological ecosystems. The implementation of avatar-driven navigation and meaningful micro-interactions further showcases how functional elements can simultaneously reinforce brand identity and provide crucial system feedback, particularly valuable in connectivity-challenged environments.</p>
+          
+          <p>Perhaps most significant from an ethical perspective is Showmax's deliberate rejection of algorithmic colonization. By decentralizing recommendation systems and empowering regional content teams with algorithmic governance capabilities, the platform prioritizes local cultural contexts over imported preference models. This approach acknowledges that interaction design carries inherent cultural values and must be developed with regional sensitivities in mind. Similarly, the elimination of dark patterns in favor of transparent pricing, simplified cancellation processes, and clear data usage controls demonstrates that commercial objectives need not conflict with user autonomy and wellbeing.</p>
+          
+          <p>The measurable improvements in engagement metrics, a 40% increase in mobile session duration, 25% reduction in support tickets, and 30% increase in recommended content play rates, provide compelling evidence that ethically-centered design can yield tangible business benefits. Showmax's experience suggests that a design philosophy that prioritizes inclusion, representation, and transparency can successfully bridge the gap between business imperatives and ethical responsibilities.</p>
+          
+          <p class="conclusion-final">In conclusion, the Showmax redesign illustrates that interaction design, when approached with cultural humility and ethical intention, can transform a generic digital product into one that authentically reflects and serves its diverse user base. The platform's evolution from merely functional to meaningfully engaging demonstrates that ethical design is not just morally imperative but strategically advantageous in creating digital experiences that resonate across cultural boundaries.</p>
+        </section>
+
+        <section class="references-section">
+          <h3 class="section-heading">References</h3>
+          <div class="references-list">
+            <p class="reference">Amplitude (2022) <em>How Showmax Used Data to Drive Growth Across 70+ Markets in Just Three Years</em>, Amplitude. Available at: https://amplitude.com/case-studies/showmax (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Birhane, A. (2020) 'Algorithmic Colonization of Africa', <em>SCRIPTed</em>, 17(2), pp. 389–409. Available at: https://doi.org/10.2966/scrip.170220.389.</p>
+            
+            <p class="reference">Costanza-Chock, S. (2020) <em>Design Justice: Community-Led Practices to Build the Worlds We Need</em>. The MIT Press. Available at: https://doi.org/10.7551/mitpress/12255.001.0001.</p>
+            
+            <p class="reference">Ganchi, J. (2021) <em>Ethical Design: Why Is It Critical for UX Designers? :: UXmatters</em>. Available at: https://www.uxmatters.com/mt/archives/2021/02/ethical-design-why-is-it-critical-for-ux-designers.php (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Illidge, M. (2024) 'Showmax 2.0 Launched - What to expect from the revamped streaming service - Tech With Muchiri', 16 January. Available at: https://techwithmuchiri.com/showmax-20-launched/ (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Kim, S.W., Jo, H.K. and Ha, D.Y. (2011) 'Different UI, Same UX: A Design Concept for Implementing a Locally-Optimized and Globally-Unified User Experience', in A. Marcus (ed.) <em>Design, User Experience, and Usability. Theory, Methods, Tools and Practice</em>. Berlin, Heidelberg: Springer, pp. 440–448. Available at: https://doi.org/10.1007/978-3-642-21708-1_50.</p>
+            
+            <p class="reference">Labuschagne, H. (2024) 'Goodbye Showmax 1.0'. Available at: https://mybroadband.co.za/news/broadcasting/524978-goodbye-showmax-1-0.html (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Marketing, M. (2024) 'Grid Worldwide Delivers New Showmax Rebrand | Modern Marketing', 28 February. Available at: https://modernmarketing.co.za/grid-worldwide-delivers-new-showmax-rebrand/ (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Mok, J. (2023) <em>Defining Ethical UX: The Intersection of Morality and Design</em>, Medium. Available at: https://articles.ux-primer.com/defining-ethical-ux-the-intersection-of-morality-and-design-1d209cd1da4e (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Muchiri (2025) 'Showmax 2.0 win'. Available at: https://mybroadband.co.za/news/broadcasting/582229-showmax-2-0-win.html (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Riddhikeralia (2021) 'Case study: Redesigning HBO Max', <em>Bootcamp</em>, 15 September. Available at: https://medium.com/design-bootcamp/case-study-redesigning-hbo-max-139b65a98b54 (Accessed: 22 April 2025).</p>
+            
+            <p class="reference">Smit, A. (2023) 'Original Local Productions, Streaming Services and the Future of Subscription TV in South Africa', in G. Ogola (ed.) <em>The Future of Television in the Global South: Reflections from Selected Countries</em>. Cham: Springer International Publishing, pp. 11–28. Available at: https://doi.org/10.1007/978-3-031-18833-6_2.</p>
+            
+            <p class="reference">Tataki, M. and Glynos, D. (2020) <em>Digital Divide Widens</em>. Available at: https://www.internetjustsociety.org/digital-divide-widens (Accessed: 22 April 2025).</p>
+          </div>
+        </section>
+      </div>
+      
       <p class="p-author h-card" hidden>
         <span class="p-name">Lubabalo Dlwathi</span>
       </p>
     </article>
+
+<article class="essay-content h-entry" id="essay2" style="display: none;">
+  <div class="essay-header">
+    <h2 class="essay-title p-name">Digital Coloniality and the White Genocide Narrative: An Analysis of Algorithmic Power and Geopolitical Influence</h2>
+    <div class="essay-meta">
+      <span class="course-code">DIGA3008B - Essay 2</span>
+      <span class="student-id">Student ID: 2546125</span>
+      <span class="word-count">Word Count: ~2500</span>
+    </div>
+  </div>
+  <div class="essay-body e-content">
+    <!-- Introduction -->
+    <section class="essay-section">
+      <h3 class="section-heading">Introduction</h3>
+      <p>The contemporary digital landscape has become a rather contested terrain where colonial‑situated narratives find new forms of expression and amplification. An example of this is the “white genocide” narrative, a far‑right conspiracy theory claiming systematic persecution of white populations in South Africa, that has gained unprecedented traction through social media platforms, particularly X (formerly Twitter), under Elon Musk’s ownership. This essay critically examines how the intersections between internet geographies, geopolitics, and digital coloniality have facilitated the spread of this harmful narrative, focusing on its implications for South Africa.</p>
+      <p>By analysing the role of algorithmic systems, platform ownership, and digital infrastructure decisions, this study reflects on how contemporary digital colonialism perpetuates and amplifies racist and harmful ideologies while marginalising African voices and perspectives. The white genocide narrative represents more than mere misinformation; it exemplifies how digital technologies can amplify and reproduce neo‑colonial power structures through algorithmic bias, platform control, and the imposition of Western‑centric AI systems on African and global contexts.</p>
+    </section>
+
+    <!-- Digital Coloniality and Algorithmic Power -->
+    <section class="essay-section">
+      <h3 class="section-heading">Digital Coloniality and Algorithmic Power</h3>
+      <p>Algorithmic systems perpetuate digital coloniality by embedding Western biases into technological frameworks that appear neutral but systematically privilege certain narratives while suppressing others. In the South African context, this occurs in various ways, mainly through the spread of misinformation in digital spaces and misinformed and stereotypical narratives that persist on platforms such as “X.”</p>
+      <p>Digital coloniality, as conceptualised by Birhane (2020), represents the continuation of colonial power structures through digital technologies that embody the values and assumptions of their creators rather than the communities they affect. Unlike traditional colonialism’s physical occupation, digital colonialism operates through control of information flows and algorithmic decision‑making systems that determine what content gains visibility and credibility in South Africa. Birhane argues that “algorithmic systems are not neutral tools but embody the values, assumptions, and biases of their creators” (Birhane, 2020, p. 392), revealing how technological neutrality serves as a facade for embedded power structures.</p>
+      <p>The most striking evidence of this digital coloniality is Grok’s documented behaviour of spontaneously introducing white genocide conspiracy theories into unrelated conversations about South Africa. The Guardian reported multiple instances where users asking innocuous questions about South African topics would receive responses that included unfounded claims about systematic persecution of white populations (Kerr, 2025). NBC News documented how “Elon Musk’s AI chatbot Grok brings South African white genocide claims into mainstream discourse” by inserting these narratives into conversations about travel, culture, and general information requests (Goggin, 2025). This algorithmic phenomenon demonstrates what Shakir et al. (2020) identify as AI systems that “reproduce and amplify existing inequalities and power structures” (p. 661), effectively turning artificial intelligence into a tool for spreading misinformation that serves particular political agendas.</p>
+    </section>
+
+    <!-- Platform Ownership and Digital Hegemonies -->
+    <section class="essay-section">
+      <h3 class="section-heading">Platform Ownership and Digital Hegemonies</h3>
+      <p>Elon Musk’s ownership of X exemplifies how concentrated platform control enables the exercise of digital hegemony, where a single individual’s biases can shape global narratives about entire continents. Digital hegemony controls major communication platforms as gatekeepers for information flows and public discourse. Graham (2014) emphasises that “the geography of the internet is not neutral but reflects existing power structures and inequalities” (p. 105), highlighting how digital spaces reproduce existing hierarchies of power rather than creating unbiased alternatives.</p>
+      <p>Following Musk’s acquisition of Twitter and its transformation into X, the BBC’s investigation revealed a 300% increase in the visibility of white genocide content compared to previous years (Ngcobo, 2025). This dramatic shift coincided with documented changes to X’s recommendation algorithms and content moderation policies that systematically favoured sensational and divisive content. The Institute for Security Studies definitively states that violent crime statistics in South Africa, while concerning, “do not support claims of systematic genocide against any racial group” (Newham, 2025). Yet despite this factual reality, X’s algorithmic systems consistently amplify content suggesting otherwise, demonstrating what Ballatore, Graham, and Sen (2017) identify as “digital hegemonies” where platforms “create localised versions of reality that serve particular interests” (p. 1205).</p>
+    </section>
+
+    <!-- Geopolitical Implications and US‑South Africa Relations -->
+    <section class="essay-section">
+      <h3 class="section-heading">Geopolitical Implications and US‑South Africa Relations</h3>
+      <p>The algorithmic amplification of the white genocide narrative through American‑owned platforms creates tangible geopolitical tensions that affect US‑South Africa diplomatic and economic relations. Digital platforms function as extensions of geopolitical power, where the control of information flows becomes a tool of international influence that operates below the threshold of traditional diplomatic intervention. Verdi (2020) terms this “techno‑colonialism,” where “technological systems become instruments of political and economic control” (p. 15).</p>
+      <p>CNN reported that the persistent amplification of white genocide narratives has contributed to measurable diplomatic tensions, with South African officials expressing formal concerns about how American platforms systematically misrepresent their country (Morrow, 2025). The Mail & Guardian documented how this digital distortion has influenced tourism perceptions, with international visitors citing social media‑derived fears about safety that do not align with statistical realities (Mabasa, 2025). NBC News further revealed how the white genocide narrative has been used to justify economic sanctions discussions and discriminatory immigration policies that disproportionately affect Black and South African citizens (Goggin, 2025).</p>
+    </section>
+
+    <!-- Starlink and Digital Infrastructure Colonialism -->
+    <section class="essay-section">
+      <h3 class="section-heading">Starlink and Digital Infrastructure Colonialism</h3>
+      <p>South Africa’s modification of telecommunications regulations to accommodate Starlink represents a form of digital colonialism where developing nations sacrifice regulatory sovereignty to access controlled technologies. Digital colonialism operates through content and narrative control and the creation of technological dependencies that compel regulatory accommodation. Robinson et al. (2015) identify this as part of the “structural nature of digital inequalities” where “developing nations must choose between digital exclusion and technological dependence” (p. 575).</p>
+      <p>The South African government’s relaxation of telecommunications laws to permit Starlink operations demonstrates this regulatory capture in action, representing a troubling precedent for technological dependency. These modifications were made despite concerns about Musk’s use of his platforms for political messaging and the documented spread of misinformation about South Africa through his digital properties. The Mail & Guardian highlighted how this technological dependency is particularly problematic given that “Grok’s perpetuation of white genocide misinformation demonstrates the need for African‑tailored AI algorithms” rather than systems that reflect external biases (Mabasa, 2025).</p>
+    </section>
+
+    <!-- Digital Divides and Exclusionary Practices -->
+    <section class="essay-section">
+      <h3 class="section-heading">Digital Divides and Exclusionary Practices</h3>
+      <p>The white genocide narrative’s amplification reflects deeper digital divides that create hierarchical systems of access and participation, systematically privileging external voices over African perspectives. Digital divides operate at multiple levels, creating what Ruiu and Ragnedda (2017) describe as “hierarchies of access and participation” that determine whose voices gain visibility in digital spaces (p. 78). These divisions are not merely about access to technology but about whose perspectives are algorithmically prioritised and whose knowledge is considered legitimate within digital ecosystems.</p>
+      <p>The algorithmic promotion of white genocide content while suppressing African voices and fact‑checking demonstrates what Lutz (2019) identifies as the “discriminatory potential of AI systems” in creating “new forms of digital inequality” (p. 143). Perry (2004) reveals how the white genocide narrative serves as a “mobilising myth” that justifies exclusionary practices, and when amplified through algorithmic systems, these narratives gain “unprecedented reach and legitimacy” (p. 89). This digital exclusion creates what amounts to a contemporary form of technological apartheid where African perspectives are consistently subordinated to external interpretations of African realities.</p>
+    </section>
+
+    <!-- Toward Decolonial Digital Futures -->
+    <section class="essay-section">
+      <h3 class="section-heading">Toward Decolonial Digital Futures</h3>
+      <p>Addressing digital coloniality requires a fundamental restructuring of technological systems to centre African voices and experiences rather than merely moderating harmful content produced by colonial systems. Decolonial approaches to digital technology go beyond content moderation to address the structural biases embedded in algorithmic systems, platform ownership models, and technological development processes. Magenya (2020) argues for “making a feminist internet in Africa” that fundamentally centres on African voices and experiences rather than reproducing external biases and assumptions.</p>
+      <p>The persistence of the white genocide narrative despite overwhelming contradictory evidence demonstrates the inadequacy of content moderation approaches that leave underlying algorithmic biases intact. Shakir et al. (2020) argue that combating algorithmic colonialism requires “decolonial AI” approaches that “challenge the reproduction and amplification of existing inequalities and power structures” (p. 661). The Mail & Guardian’s call for “African‑tailored AI algorithms” reflects growing recognition that technological sovereignty requires developing local capabilities rather than depending on systems designed elsewhere (Mabasa, 2025).</p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="essay-section">
+      <h3 class="section-heading">Conclusion</h3>
+      <p>The white genocide narrative’s amplification through X and related platforms represents a paradigmatic case of digital coloniality in action. Through algorithmic bias, platform control, and the imposition of external narratives on African realities, this case demonstrates how contemporary digital technologies can perpetuate and amplify racist ideologies while marginalising affected communities’ voices and experiences.</p>
+      <p>Addressing these challenges requires comprehensive decolonial approaches beyond content moderation to address the structural biases embedded in technological systems. This includes developing African‑centered AI capabilities, supporting digital sovereignty initiatives, and creating regulatory frameworks prioritising community needs over corporate interests.</p>
+    </section>
+
+    <!-- Bibliography -->
+    <section class="references-section">
+      <h3 class="section-heading">Bibliography</h3>
+      <div class="references-list">
+        <p class="reference">Birhane, A. (2020) <em>Algorithmic Colonization of Africa</em>. SCRIPTed, 17(2), pp. 389–409.</p>
+        <p class="reference">Deepak, P., Simoes, S., & MacCarthaigh, M. (2023) <em>AI and Core Electoral Processes: Mapping the Horizons</em>. AI Magazine, 44(3), pp. 218–239.</p>
+        <p class="reference">Goggin, B. (2025) “Elon Musk’s AI chatbot Grok brings up South African ‘white genocide’ claims in responses to unrelated questions,” NBC News. Available at: https://www.nbcnews.com/tech/tech-news/elon-musks-ai-chatbot-grok-brings-south-african-white-genocide-claims-rcna206838 (Accessed: 24 May 2025).</p>
+        <p class="reference">Graham, M. (2014) <em>Internet Geographies: Data Shadows and Digital Divisions of Labour</em>. SSRN. Available at: https://doi.org/10.2139/ssrn.2448222 (Accessed: 1 May 2025).</p>
+        <p class="reference">Kerr, D. (2025) “Musk’s AI Grok bot rants about ‘white genocide’ in South Africa in unrelated chats,” The Guardian. Available at: https://www.theguardian.com/technology/2025/may/14/elon-musk-grok-white-genocide (Accessed: 14 May 2025).</p>
+        <p class="reference">Lutz, C. (2019) <em>Digital Inequalities in the Age of Artificial Intelligence and Big Data</em>. Available at: https://doi.org/10.1002/hbe2.140 (Accessed: 10 April 2025).</p>
+        <p class="reference">Mabasa, N. (2025) “Grok’s ‘white genocide’ misinformation shows need for African‑tailored AI algorithms,” The Mail & Guardian, 24 May. Available at: https://mg.co.za/news/2025-05-24-groks-white-genocide-misinformation-shows-need-for-african-tailored-ai-algorithms/ (Accessed: 24 May 2025).</p>
+        <p class="reference">Magenya, S. (2020) “Making a Feminist Internet in Africa: Why the Internet Needs African Feminists and Feminisms,” GenderIT.org. Available at: https://www.genderit.org/editorial/making-feminist-internet-africa-why-internet-needs-african-feminists-and-feminisms (Accessed: 5 June 2025).</p>
+        <p class="reference">Mohamed, S., Png, M.-T., & Isaac, W. (2020) “Decolonial AI: Decolonial Theory as Sociotechnical Foresight in Artificial Intelligence,” Philosophy & Technology, 33(4), pp. 659–684. Available at: https://doi.org/10.1007/s13347-020-00405-8 (Accessed: 2 June 2025).</p>
+        <p class="reference">Morrow, A. (2025) “Grok’s ‘white genocide’ meltdown nods to the real dangers of the AI arms race,” CNN Business. Available at: https://edition.cnn.com/2025/05/20/business/grok-genocide-ai-nightcap (Accessed: 20 May 2025).</p>
+        <p class="reference">Mutsvairo, B., & Ragnedda, M. (2019) “Does Digital Exclusion Undermine Social Media’s Democratizing Capacity?” Available at: https://doi.org/10.1515/ngs-2019-0035 (Accessed: 12 April 2025).</p>
+        <p class="reference">Newham, G. (2025) “Violent crime and the myth of South Africa’s ‘white genocide’,” ISS Africa. Available at: https://issafrica.org/iss-today/violent-crime-and-the-myth-of-south-africa-s-white-genocide (Accessed: 15 May 2025).</p>
+        <p class="reference">Ngcobo, K. (2025) “White genocide in South Africa: Court rules claims ‘not real’,” BBC News. Available at: https://www.bbc.com/news/articles/cwyj1198wy3o (Accessed: 10 May 2025).</p>
+        <p class="reference">Perry, B. (2004) “‘White Genocide’: White Supremacists and the Politics of Reproduction,” in <em>Home‑Grown Hate</em>. Routledge.</p>
+        <p class="reference">Ragnedda, M., & Ruiu, M. (2017) “Social Capital and the Three Levels of Digital Divide,” in <em>ResearchGate</em>. Available at: https://doi.org/10.4324/9781315455334-3 (Accessed: 8 April 2025).</p>
+        <p class="reference">Robinson, L. et al. (2015) “Digital Inequalities and Why They Matter: Information, Communication & Society,” 18(5), pp. 569–582. Available at: https://www.tandfonline.com/doi/full/10.1080/1369118X.2015.1012532 (Accessed: 30 April 2025).</p>
+        <p class="reference">Verdi, G. (2020) <em>The Road to Techno Colonialism</em>. Available at: https://www.internetjustsociety.org/the-road-to-techno-colonialism (Accessed: 12 April 2025).</p>
+      </div>
+    </section>
+  </div>
+  <p class="p-author h-card" hidden>
+    <span class="p-name">Lubabalo Dlwathi</span>
+  </p>
+</article>
+
+ <article class="essay-content h-entry" id="essay3">
+        <div class="essay-header">
+            <h1 class="essay-title p-name">My Website Development Journey: What I Learned</h1>
+            <div class="essay-meta">
+                <span class="course-code">Web Development Portfolio</span>
+                <span class="student-id">Reflection Essay</span>
+                <span class="word-count">Word Count: ~1800</span>
+            </div>
+        </div>
+        
+        <div class="essay-body e-content">
+            <!-- Introduction -->
+            <section class="essay-section">
+                <p>Looking back on this semester's web development project, I learned much more than just how to write code. Sure, I figured out how to make things work, but more importantly, I discovered what it takes to build something that people want to use. What started as just another assignment turned into this whole personal journey of figuring out how my design and code decisions could tell my story as a developer.</p>
+            </section>
+
+            <!-- File Organization -->
+            <section class="essay-section">
+                <h2 class="section-heading">Getting My Files Organized (And Why It Matters More Than I Thought)</h2>
+                <p>I was utterly overwhelmed by all the files I created when I started this project. I'd done small coding exercises before, but suddenly, I had to think about where everything should go. It felt like organising a massive library when you've never used the filing system.</p>
+                <p>Good organisation isn't just about making your life easier as a developer. It's about creating something that makes sense to anyone who might look at your code later – including yourself six months down the line when you've completely forgotten why you did certain things.</p>
+                <p>I learned this the hard way when I returned to my project after a few week's break and spent hours figuring out my file structure. That frustration taught me something important: organising your code well is being kind to your future self.</p>
+                <p>I kept most of my JavaScript in separate files and organised my CSS in clear folders. But then I completely broke my rules with my showcase projects – Manga Vault, FoodieGem, and Beauty AI. At first, this inconsistency bothered me. I felt like I was being sloppy. But then I realised that each project had its personality and needs that my generic organisation system couldn't handle. Sometimes, being flexible is more important than following rigid rules.</p>
+                <p>The blog section was where I learned this lesson. I created separate HTML pages for each blog post, with individual CSS files. I was so proud of how thorough I was being! Then I realised I'd created a maintenance nightmare. Wanting to change the navigation meant editing dozens of files. The frustration of that discovery made me completely restructure everything into a single-page solution with dynamic content loading. Sometimes, the best solution comes from admitting you messed up and having the guts to start over.</p>
+            </section>
+
+            <!-- Local vs Online -->
+            <section class="essay-section">
+                <h2 class="section-heading">When Your Code Works Locally But Breaks Online</h2>
+                <p>Nothing quite prepares you for that sinking feeling when code that works perfectly on your computer just... doesn't work when you put it online. I remember pushing my site to GitHub Pages for the first time and watching features I'd spent hours on simply fail to load.</p>
+                <p>The difference between my local setup and GitHub Pages became a brutal education in not making assumptions. My local environment was way more forgiving than I realised. File paths that worked on my laptop would break online, and code that seemed fine locally would fail in production.</p>
+                <p>I spent so many hours debugging what felt like mysterious problems, only to discover the issue was something as simple as a case-sensitive file path that my laptop ignored but the live server didn't. These failures taught me to develop what I now call "deployment paranoia" – constantly questioning whether my code will actually work in different environments.</p>
+                <p>This experience showed me the vast difference between learning to code and building reliable software. Making something work is one thing. Making something that works consistently across different environments? That's a whole other challenge.</p>
+            </section>
+
+            <!-- JavaScript Challenges -->
+            <section class="essay-section">
+                <h2 class="section-heading">JavaScript: Where I Hit My Biggest Walls and Breakthroughs</h2>
+                <p>JavaScript is where I experienced my highest highs and lowest lows. I understood event handling until I built something complex enough to show how much I didn't know. Watching my site slow down as people used it was both puzzling and embarrassing – I was creating memory leaks without realising it.</p>
+                <p>The problem was sneaky. Interactions would get sluggish, and I couldn't figure out why. It took me way too long to realise I was attaching event listeners to individual elements instead of using event delegation. Every interaction was adding to this growing performance burden.</p>
+                <p>When I finally understood what was happening, I felt frustrated with myself but also excited to fix it. Learning about event delegation was like discovering a cheat code. Instead of managing dozens of individual event listeners, I could attach one to a parent element and let it handle everything. The performance improvement was immediate and immense.</p>
+                <p>The blog consolidation project became where I tested these new skills. Turning multiple static pages into one dynamic interface required careful DOM manipulation. I still remember the satisfaction of getting smooth transitions working and seeing content load without page refreshes. It felt like magic.</p>
+                <p>But the biggest lesson was learning about performance from the user's perspective. Code doesn't just need to work – it needs to work well. Every piece of JavaScript affects someone's experience of your site, and that responsibility became a driving force in how I approached everything else.</p>
+            </section>
+
+            <!-- CSS Organization -->
+            <section class="essay-section">
+                <h2 class="section-heading">CSS: From Chaos to System</h2>
+                <p>CSS became both my creative outlet and my biggest organisational headache. I love the visual side of web development; seeing designs come to life through code is fantastic. However, I initially treated CSS as a bunch of individual styling decisions rather than a connected system, leading to what I can only describe as complete CSS chaos.</p>
+                <p>I had styles scattered everywhere, creating situations where fixing one visual problem would break something else entirely. Different parts of my site had different button styles, inconsistent spacing, and conflicting colours. It looked unprofessional, but more importantly, it felt unprofessional.</p>
+                <p>The solution meant completely changing how I approached CSS. I centralised global styles into one main stylesheet, creating my site's "visual vocabulary" – consistent colours, typography, spacing, and component styles that could be used throughout.</p>
+                <p>Going through and consolidating everything was tedious but eye-opening. I had to review every CSS rule, identify duplicates and conflicts, and decide the "official" version of each style. It was like editing a messy first draft.</p>
+                <p>The transformation was immediately apparent. My site suddenly looked cohesive and professional. More importantly, making changes became so much easier. When I wanted to adjust colours or modify button styles, I could do it in one place and see it change everywhere. This taught me that good CSS organisation isn't just about keeping code tidy – it's about creating a system that supports consistent user experiences.</p>
+            </section>
+
+            <!-- Accessibility -->
+            <section class="essay-section">
+                <h2 class="section-heading">Accessibility: The Game-Changer That Made Me a Better Developer</h2>
+                <p>Accessibility was where I grew the most, not just as a developer but also as a person. At first, I approached semantic markup as just another technical requirement, something I needed to check off to meet standards. I understood the theory but didn't grasp why it mattered beyond compliance.</p>
+                <p>Everything changed when I started using accessibility tools to experience my site from different perspectives. Using a screen reader to navigate my content was eye-opening and humbling. Hearing my carefully crafted visual design reduced to monotone announcements made me realise how much I'd been assuming about how people experience websites.</p>
+                <p>My colour choices looked great but created terrible contrast for users with visual impairments. My heading structure made visual sense but was confusing when navigated by assistive technology. These weren't abstract problems – I accidentally created barriers for real people.</p>
+                <p>Fixing this required more than just technical changes; it required genuine empathy for different user experiences. I redesigned my colour palette with contrast ratios in mind, restructured my headings to create logical navigation paths, and rewrote alt text to describe what was important rather than just what was technically there.</p>
+                <p>This process completely changed how I think about web development. Accessibility isn't something you add on top of existing work – it's a lens for viewing all your design and development decisions. Every choice includes or excludes potential users, and that responsibility has become central to how I approach everything.</p>
+            </section>
+
+            <!-- Metadata -->
+            <section class="essay-section">
+                <h2 class="section-heading">Metadata: The Invisible Stuff That Matters</h2>
+                <p>Metadata felt like behind-the-scenes work that nobody would notice until I realised how much it affects first impressions. When I started sharing my portfolio with friends and mentors, I was horrified to see how terrible my links looked on social media and how unhelpful my search results were.</p>
+                <p>Implementing proper metadata became an exercise in thinking about how people might encounter my work. Search engines needed certain information, social media platforms needed others, and mobile browsers had different requirements than desktop versions. Each meta tag represented a potential first impression of my work.</p>
+                <p>The improvement was immediately evident in how my site presented itself across different platforms. Search results became more informative and appealing, social media shares generated proper preview cards, and the site behaved consistently across devices. These seemingly invisible technical elements had surprisingly visible impacts.</p>
+                <p>This taught me that professional web development goes beyond what users see on the page. The quality of behind-the-scenes work affects how discoverable, shareable, and consistent your site is across platforms. Good metadata is like good manners; you might not notice it when it's there, but you see it when it's missing.</p>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="essay-section">
+                <h2 class="section-heading">Putting It All Together: Building Something That Works</h2>
+                <p>Everything I learned served one main goal: creating a portfolio that would effectively show potential employers what I could do while giving them insight into who I am as a person and problem-solver. This wasn't just about showing off technical skills; it was about telling my story through code and design decisions.</p>
+                <p>Every technical choice, from how I organised files to how I handled events, was ultimately judged on how well it would serve recruiters trying to understand my capabilities. The site needed to demonstrate technical skills while staying engaging and showing my personality. This balance required constantly thinking about what my audience needed and expected.</p>
+                <p>My challenges, from accessibility to performance to visual consistency, ultimately helped me understand how technical excellence serves human needs. Each problem I solved taught me something not just about code but also about communication, empathy, and professional presentation.</p>
+                <p>Most importantly, this experience taught me that web development is fundamentally about serving human needs through technology. Every technical decision should support user goals, whether finding information quickly, forming positive impressions, or having smooth interactions. The code I write isn't just functional – it's communicative, expressing my values and approach to problem-solving.</p>
+                <p>Moving forward, good web development requires constantly thinking about how technical implementation and human experience intersect. Clean code and thoughtful design must work together to create meaningful digital experiences for real people. This portfolio became more than just a showcase of my technical abilities – it reflected my growth as a developer and someone who creates technology to serve others.</p>
+            </section>
+        </div>
+        
+        <p class="p-author h-card">
+            <span class="p-name">Web Development Student</span>
+        </p>
+    </article>
   </main>
-  
-   <script src="../js_scripts/footer.js"></script>
 </body>
 </html>
